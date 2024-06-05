@@ -1,0 +1,12 @@
+.diver {
+    background-color: gold;
+}
+
+.diver-container {
+    height: 100vh;
+    color: black;
+}
+
+.diver-container h1 span {
+    color: gold;
+}

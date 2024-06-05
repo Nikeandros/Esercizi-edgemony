@@ -1,0 +1,22 @@
+/* MAIN */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(249,222,253);
+    background: radial-gradient(circle, rgba(249,222,253,1) 0%, rgba(203,245,252,1) 50%, rgba(254,249,229,1) 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4CAF50;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.todo-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}

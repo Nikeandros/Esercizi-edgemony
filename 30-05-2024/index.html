@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Shoes TODO List</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js" type="module"></script>
+</head>
+<body>
+    
+    <div class="todo-container">
+        <header>
+            <h1>Mario Shoes' TODO List</h1>
+            <img src="./icons/maccio.jpg" alt="Maccio Capatonda">
+        </header>
+        <div class="warning-message" id="warning-message">
+            <p>WARNING-MESSAGE</p>
+            <button id="dismiss-warning">OK</button>
+        </div>
+        <main class="main">
+            <div class="card-container">
+                <!-- Add Card Start -->
+                <div class="card add-card">
+                    <div class="card-header">
+                        <img class="card-icon-small" src="./icons/icon-park-outline--add-one.png" alt="icon task type small">
+                        <h2 class="card-title">Add a title...</h2>
+                    </div>
+                    <div class="card-icon-add">
+                        <img src="../icons/icon-park-outline--add-one.png" alt="icon task type big">
+                    </div>
+                    <div class="card-description">
+                        <p class="card-description-box">Add a description...</p>
+                        <p class="card-due-date">Add a deadline...</p>
+                    </div>
+                    <div class="card-footer">
+                        <img class="card-footer-icon" src="./icons/icon-park-outline--edit.png" alt="edit">
+                        <img class="card-footer-icon" src="./icons/icon-park-outline--delete-five.png" alt="delete">
+                        <img class="card-footer-icon" src="./icons/icon-park-outline--done-all.png" alt="done">
+                    </div>
+                </div>
+                <!-- Add Card End -->
+            </div>
+        </main>
+        
+    </div>
+</body>

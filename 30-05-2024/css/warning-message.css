@@ -1,0 +1,39 @@
+.warning-message {
+    position: fixed;
+    background-color: rgba(255, 96, 96, 0.8);
+    color: #000000;
+    
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    display: none;
+    width: 200px;
+    height: 60px;
+    box-shadow: 0 40px 40px 0 rgba(0,0,0,0.7);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    z-index: 1;
+    top: calc(50% - 30px);
+    left: calc(50% - 100px);
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.warning-message p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.warning-message button {
+    background-color:#e9e5dad6;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

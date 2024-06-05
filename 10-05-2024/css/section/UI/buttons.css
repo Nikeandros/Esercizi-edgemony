@@ -1,0 +1,20 @@
+.buttons {
+    padding: 12px 24px;
+    display: inline-block;
+   text-decoration: none;
+   border-radius: 24px;
+   font-weight: bold;
+}
+
+
+.buttons-flat {
+    background-color: black;
+    color: gold;
+    border: 1px solid;
+}
+
+.buttons-outline {
+    border: 1px solid;
+    color: black;
+    background-color: gold;
+}

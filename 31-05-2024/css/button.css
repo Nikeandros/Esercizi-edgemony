@@ -1,0 +1,77 @@
+.filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 50px ;
+}
+
+
+button {
+    width: 48px;
+    height: 48px;
+    border-radius: 48%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-repeat: no-repeat;
+    background-size: 70%; 
+    background-position: center; 
+    padding: 0; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+    .button:hover {
+        background-color: #2980b9;
+    }
+
+    .button .icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 5px;
+        vertical-align: middle;
+    } 
+
+#personal-task {
+    background-color: #78fc78ac;
+    background-image: url("../icons/icon-park-outline--user.png");
+}    
+
+#work-task {
+    background-color: #78fc78ac;
+    background-image: url("../icons/icon-park-outline--handbag.png");
+}
+
+#urgent-personal-task {
+    background-color: rgba(255, 96, 96, 0.8);
+    background-image: url("../icons/icon-park-outline--user.png");
+}
+
+#urgent-work-task {
+    background-image: url("../icons/icon-park-outline--handbag.png");
+    background-color: rgba(255, 96, 96, 0.8);
+}
+
+#done {
+    background-image: url("../icons/hugeicons--task-done-01.png");
+    background-color: #636363bd;
+}
+
+
+/* Warnig message OK button */
+
+#dismiss-warning {
+    background-color:#e9e5dad6;
+    color: #000000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 40px;
+    height: 34px;
+}

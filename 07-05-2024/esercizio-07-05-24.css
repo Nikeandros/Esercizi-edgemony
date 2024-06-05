@@ -1,0 +1,57 @@
+h1 {
+    color:#F21E02 ;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p {
+    color:#710AF5 ;
+    font-size: 75px;
+    text-align: center;
+}
+
+.sezione-blu {
+    color: #802130 ;
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.quadrato {
+    width: 100px; 
+    height: 100px;
+background-color:#37DE8B ;
+}
+
+.prova-sfondo{
+width: 50vw;
+    height:50vh ;
+    background-image: url(helldivers-2-hd-wallpaper-uhdpaper.com-921@1@n.jpg) ;
+    background-size: contain; 
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
+.sfondo-piccolo{
+    border: 5px solid yellowgreen;
+    border-radius: 10px;
+    margin: 40px 50px 60px 70px;
+
+
+}
+
+.palo {
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    font-size: large;
+    color: #F21E02;
+    background-color: aquamarine;
+    max-width: 1920px; ;
+    max-height: 1080px; ;
+
+    
+}

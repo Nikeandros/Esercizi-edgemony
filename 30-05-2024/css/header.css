@@ -1,0 +1,35 @@
+/* HEADER */
+header {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "Permanent Marker", cursive;
+    text-transform: capitalize;
+    font-weight: 10;
+    padding: 20px;
+    background-color: rgb(165, 216, 255, 0.5);
+    border-radius: 20px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-family: "Edu TAS Beginner", cursive;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+header img {
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+

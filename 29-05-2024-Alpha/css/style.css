@@ -1,0 +1,232 @@
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Pacifico&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Pacifico&display=swap');
+
+/* HEADER */
+header {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "Permanent Marker", cursive;
+    text-transform: capitalize;
+    font-weight: 10;
+    padding: 20px;
+    background-color: rgb(165, 216, 255, 0.5);
+    border-radius: 20px;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-family: "Edu TAS Beginner", cursive;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+header img {
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* BODY */
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(249,222,253);
+    background: radial-gradient(circle, rgba(249,222,253,1) 0%, rgba(203,245,252,1) 50%, rgba(254,249,229,1) 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4CAF50;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.todo-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* CARD */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 40px;
+
+}
+
+.card {
+    position: relative;
+    width: 300px; /* Larghezza fissa della card */
+    height: 400px; /* Altezza fissa della card */
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    box-sizing: border-box;
+    
+}
+
+.card h2 {
+    font-family: "Permanent Marker", cursive;
+    text-transform: capitalize;
+    font-weight: 10;
+    margin: 0;
+    color: #333;
+}
+
+
+
+.card-description-box {
+    background-color: rgb(252, 251, 251, 0.4);
+    border: #333 solid 1px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Allinea il contenuto in alto */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 84%;
+    height: 180px;
+    overflow: auto;
+    padding: 10px; /* Aggiunge padding per evitare che il testo sfori i bordi */
+}
+
+/* Personalizzazione della scrollbar */
+.card-description-box::-webkit-scrollbar {
+    width: 8px; /* Larghezza della scrollbar */
+}
+
+.card-description-box::-webkit-scrollbar-track {
+    background: transparent; /* Colore dello sfondo della scrollbar */
+}
+
+.card-description-box::-webkit-scrollbar-thumb {
+    background: #aaa; /* Colore del thumb della scrollbar */
+    border-radius: 10px; /* Arrotondamento del thumb */
+}
+
+.card-description-box::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Colore del thumb al passaggio del mouse */
+}
+
+.card p {
+    margin: 0; /* Rimuovi margini superiori e inferiori */
+    color: #333;
+}
+
+.card-icon{
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #78fc78;
+}
+
+.card-header {
+    justify-content: left;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-due-date {
+    font-size: 0.9em;
+    color: #757575;
+    margin-top: 10px;
+    position: absolute; 
+    bottom: 60px; 
+    right: 20px; 
+}
+
+.card-footer {
+    position: absolute; 
+    bottom: 20px; 
+    left: 20px; 
+    right: 20px; 
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-footer img {
+    width: 30px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.add-card {
+    background-color: #ffa7ea91;
+    opacity: 0.6;
+}
+
+.card-icon-add {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.card-icon-small {
+    padding: 4px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+}
+
+/* TASK Categories */
+.personal-task {
+    background-color:rgb(165, 216, 255, 0.5);
+
+}
+
+.urgent-personal-task {
+    background-color: rgb(165, 216, 255, 0.5);
+}
+
+.urgent-personal-task .card-icon {
+    background-color: rgb(255, 96, 96);
+}
+
+.work-task {
+    background-color: rgb(208, 191, 255, 0.5);
+}
+
+.urgent-work-task {
+    background-color: rgb(208, 191, 255, 0.5);
+}
+
+.urgent-work-task .card-icon {
+    background-color: rgb(255, 96, 96);
+}
+
+.completed-task-icon {
+    background-image: url("../icons/hugeicons--task-done-01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.completed-task {
+    background-color: #65856d;
+    opacity: 0.6;
+}

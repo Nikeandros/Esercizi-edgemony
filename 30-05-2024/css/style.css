@@ -1,0 +1,18 @@
+/* TYPOGRAPHY */
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Pacifico&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Pacifico&display=swap');
+
+/*HEADER*/
+@import url('./header.css');
+
+/*MAIN*/
+@import url('./main.css');
+
+/*CARD*/
+@import url('./card.css');
+
+/*TASK Categories*/
+@import url('./task-categories.css');
+
+/*WARNING MESSAGE*/
+@import url('./warning-message.css');

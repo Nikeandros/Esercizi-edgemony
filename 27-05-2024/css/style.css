@@ -1,0 +1,173 @@
+
+
+/* HEADER */
+
+
+header {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    padding: 20px;
+    background-color: #a5d8ff;
+    border-radius: 20px;
+    color: #1971c2;
+}
+
+header img {
+    width: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+
+/* HEADER END */
+
+
+
+/* BODY */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: rgb(232,230,230);
+    background: linear-gradient(0deg, rgba(232,230,230,1) 12%, rgba(255,249,219,1) 88%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4CAF50;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.todo-container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    display: hide;
+}
+
+
+/* BODY END */
+
+
+
+/* CARD */
+
+
+.card-icon{
+    padding: 4px;
+    border-radius: 50%;
+    background-color: #00FF00;
+}
+
+.card-header {
+    justify-content: left;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 calc(33% - 20px);
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    min-width: 250px;
+    max-width: calc(33% - 20px);
+    box-sizing: border-box;
+}
+
+.card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    margin-top: 10px;
+    color: #555;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.add-card {
+    background-color: #f629c6
+}
+
+
+
+/* CARD END */
+
+
+
+/* TASK */
+
+
+.personal-task {
+    background-color:#a5d8ff;
+}
+
+.urgent-personal-task {
+    background-color: #a5d8ff;
+}
+
+.urgent-personal-task .card-icon {
+    background-color: red;
+}
+
+.work-task {
+    background-color: #d0bfff;
+}
+
+.urgent-work-task {
+    background-color: #d0bfff;
+}
+
+.urgent-work-task .card-icon {
+    background-color: red;
+}
+
+.completed-task-icon {
+    background-image: url("../icons/hugeicons--task-done-01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.completed-task {
+    background-color: #65856d;
+    opacity: 0.6;
+}
+
+
+/* TASK END */
+
+
+
