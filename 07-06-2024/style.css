@@ -1,11 +1,11 @@
-/* Container per i bottoni */
+
 .button-container {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-/* Stile per i bottoni delle categorie */
+
 .button-container button {
   padding: 10px 20px;
   font-size: 1em;
@@ -21,7 +21,7 @@
   background-color: #ff4500;
 }
 
-/* Altri stili esistenti */
+
 #moviesContainer {
   display: flex;
   flex-wrap: wrap;

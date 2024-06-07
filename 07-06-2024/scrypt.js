@@ -1,6 +1,6 @@
 import API_KEY from './key.js';
 
-// Funzione per effettuare la chiamata all'API di MovieDB
+
 function fetchMovies(endpoint, page = 1) {
   const url = `https://api.themoviedb.org/3/movie/${endpoint}?api_key=${API_KEY}&page=${page}`;
   console.log(`Fetching movies from: ${url}`);
@@ -19,18 +19,18 @@ function fetchMovies(endpoint, page = 1) {
     });
 }
 
-// Funzione per costruire l'URL dell'immagine del poster
+
 function buildPosterUrl(posterPath) {
   console.log('Building poster URL for:', posterPath);
   if (!posterPath) {
-    // Se il percorso del poster non è disponibile, restituisci una stringa vuota
+    
     return '';
   }
-  // Costruisci l'URL completo dell'immagine del poster utilizzando il percorso del poster e la base URL di TMDb per le immagini
+  
   return `https://image.tmdb.org/t/p/w500/${posterPath}`;
 }
 
-// Funzione per stampare le card dei film nel DOM
+
 function displayMovies(movies) {
   const moviesContainer = document.getElementById('moviesContainer');
   moviesContainer.innerHTML = '';
@@ -50,7 +50,7 @@ function displayMovies(movies) {
   });
 }
 
-// Funzione per gestire la ricerca di film
+
 function searchMovies() {
   const searchInput = document.getElementById('searchInput').value.trim();
   console.log('Searching for movies with query:', searchInput);
@@ -80,7 +80,7 @@ function searchMovies() {
     });
 }
 
-// Funzione per gestire il cambio di categoria
+
 function changeCategory(endpoint) {
   console.log(`Changing category to: ${endpoint}`);
   fetchMovies(endpoint)
@@ -92,13 +92,10 @@ function changeCategory(endpoint) {
     });
 }
 
-// Effettua la chiamata iniziale all'API di MovieDB e visualizza i film popolari all'avvio
 changeCategory('popular');
 
-// Aggiungi un event listener ai bottoni delle categorie
 document.getElementById('popularButton').addEventListener('click', () => changeCategory('popular'));
 document.getElementById('topRatedButton').addEventListener('click', () => changeCategory('top_rated'));
 document.getElementById('upcomingButton').addEventListener('click', () => changeCategory('upcoming'));
 
-// Aggiungi un event listener al bottone di ricerca
 document.getElementById('searchButton').addEventListener('click', searchMovies);
