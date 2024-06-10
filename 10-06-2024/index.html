@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieDB API Example</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="button-container">
+      <button id="popularButton">Popular</button>
+      <button id="topRatedButton">Top Rated</button>
+      <button id="upcomingButton">Upcoming</button>
+    </div>
+    <input type="text" id="searchInput" placeholder="Cerca film...">
+    <button id="searchButton">Cerca</button>
+    <div id="contentTypeSelector">
+      <label for="contentType">Tipo di contenuto:</label>
+      <select id="contentType">
+        <option value="movie">Movie</option>
+        <option value="tv">TV Show</option>
+      </select>
+    </div>
+    <div id="genreSelector">
+      <label for="genre">Genere:</label>
+      <select id="genre"></select>
+    </div>
+    <div id="moviesContainer"></div>
+    <div class="pagination">
+      <button id="prevPageButton">Prev</button>
+      <span id="currentPage">Pagina 1</span>
+      <button id="nextPageButton">Next</button>
+    </div>
+  </div>
+  <script src="./scrypt.js" type="module"></script>
+</body>
+</html>
