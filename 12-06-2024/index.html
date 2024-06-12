@@ -32,7 +32,26 @@
       <select id="genre"></select>
     </div>
     <div id="moviesContainer"></div>
-  
+
+    <!-- Form per creare un prodotto -->
+    <div id="productFormContainer">
+      <h2>Crea un nuovo prodotto</h2>
+      <form id="productForm">
+        <input type="text" id="title" placeholder="Titolo" required>
+        <input type="number" id="price" placeholder="Prezzo" required>
+        <input type="text" id="description" placeholder="Descrizione" required>
+        <input type="url" id="image" placeholder="URL dell'immagine" required>
+        <input type="number" id="categoryId" placeholder="ID della categoria" required>
+        <button type="submit">Crea prodotto</button>
+      </form>
+    </div>
+
+    <!-- Input per cancellare un prodotto -->
+    <div id="deleteProductContainer">
+      <h2>Cancella un prodotto</h2>
+      <input type="number" id="deleteProductId" placeholder="ID del prodotto" required>
+      <button id="deleteProductButton">Cancella prodotto</button>
+    </div>
   </div>
   <script src="./scrypt.js" type="module"></script>
 </body>
