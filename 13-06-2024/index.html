@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interazione con API EscuelaJS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interazione con API EscuelaJS</h1>
+        <form id="postForm">
+            <h2>Aggiungi o modifica un oggetto</h2>
+            <label for="title">Titolo:</label>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="price">Prezzo:</label>
+            <input type="number" id="price" name="price" required><br><br>
+            <label for="description">Descrizione:</label>
+            <textarea id="description" name="description" required></textarea><br><br>
+            <label for="imageUrl">URL dell'immagine:</label>
+            <input type="text" id="imageUrl" name="imageUrl" required><br><br>
+            <button type="submit" id="addButton">Aggiungi</button>
+            <button type="button" id="updateButton">Aggiorna</button>
+            <div class="error" id="formError"></div>
+        </form>
+        
+        <h2>Seleziona un oggetto per ID</h2>
+        <label for="selectId">ID dell'oggetto da selezionare:</label>
+        <input type="text" id="selectId" required>
+        <button id="selectButton">Seleziona</button>
+
+        <h2>Rimuovi un oggetto</h2>
+        <label for="deleteId">ID dell'oggetto da rimuovere:</label>
+        <input type="text" id="deleteId" required>
+        <button id="deleteButton">Rimuovi</button>
+        <div class="feedback" id="deleteFeedback">Oggetto rimosso</div>
+        
+        <h2>Oggetti presenti:</h2>
+        <button id="fetchButton">Mostra oggetti</button>
+        <div id="objectList"></div>
+    </div>
+    
+    <script src="./scrypt.js"></script>
+</body>
+</html>
