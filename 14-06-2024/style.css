@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e3f2fd;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+h1::after {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background-color: #ffeb3b;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffeb3b;
+    box-shadow: 0 0 5px rgba(255, 235, 59, 0.5);
+    outline: none;
+}
+
+button {
+    background-color: #ffeb3b;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #fdd835;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.feedback, .error {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.feedback {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.error {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#appContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.form-box {
+    flex: 1;
+    min-width: 280px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+#objectList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#objectList div {
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 0 1 calc(33% - 20px);
+    max-width: calc(33% - 20px);
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    text-align: left;
+}
+
+#objectList div:hover {
+    background-color: #e0f7fa;
+    transform: translateY(-2px);
+}
+
+#objectList div img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#logoutButton {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#logoutButton:hover {
+    background-color: #e64a19;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#loginContainer {
+    background-color: #CDDBFA;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+#appContainer {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#postForm {
+    width: 25%;
+    border: none;
+    background-color: #CDDBFA;
+}
+
+#deleteContainer {
+    width: 25%;
+    background-color: #CDDBFA;
+}
+
+#selectForm {
+    width: 25%;
+    background-color: #CDDBFA;
+    }
+
